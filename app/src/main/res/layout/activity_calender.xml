@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gihan.yoga.CalenderActivity">
+    
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calender_view"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#00F"
+        ></com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calender_view"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:src="@drawable/rect"
+            android:layout_weight="2"
+
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:text="Work Out Done"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="8"/>
+
+    </LinearLayout>
+</RelativeLayout>
